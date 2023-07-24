@@ -1,0 +1,9 @@
+Funcionalidade #2: Logout
+	Usuário logado deseja sair do sistema
+
+Cenário #2.1: Logout válido
+	Dado um usuário logado no sistema
+	E ele, em qualquer página do sistema, clica no ícone superior esquerdo
+	Então o menu lateral é aberto
+	Quando ele clica no botão “logout” desse menu
+	Então o sistema o desloga e o redireciona para a página de login

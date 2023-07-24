@@ -1,0 +1,22 @@
+Funcionalidade #5: Preencher carrinho
+	Usuário logado deseja adicionar e/ou remover produtos de seu carrinho
+
+Contexto:
+	Dado um usuário logado qualquer no sistema
+
+Cenário #5.1: Adicionar produto válido
+	Quando ele clica no botão “Add to cart” de um produto, seja na página de estoque ou na página individual dele
+	Então a quantidade de itens é incrementada no ícone do carrinho
+	E o botão “Add to cart” vira o botão “Remove”
+	E o produto adicionado aparece na página do carrinho
+
+Cenário #5.2: Remover produto válido
+	Quando ele clica no botão “Remove” de um produto, seja na página de estoque, na página individual dele ou no carrinho
+	Então a quantidade de itens é decrementada no ícone do carrinho
+	E o botão “Remove” vira o botão “Add to cart”
+	E o produto desaparece da página do carrinho
+
+Cenário #5.3: Acessar carrinho
+	Quando ele clica no ícone do carrinho
+	Então o sistema exibe a lista de produtos adicionados ao carrinho, cada um com quantidade, nome, descrição, preço e um botão “Remove”
+	E exibe os botões “← Continue Shopping” e “Checkout”

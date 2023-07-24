@@ -1,0 +1,38 @@
+Funcionalidade #1: Login
+	Usuário deseja realizar login para acessar o sistema
+
+Cenário #1.1: Login válido
+	Dado um usuário que esteja cadastrado e com acesso ao sistema
+	E ele insere seu username e sua senha corretos na página de Login
+	Quando ele clica no botão “login”
+	Então o sistema o loga e o redireciona para a página inicial
+
+Cenário #1.2: Login incorreto
+	Dado um usuário que esteja cadastrado e com acesso ao sistema
+	E ele insere seu username correto e uma senha incorreta na página de Login
+	Quando ele clica no botão “login”
+	Então o sistema não o deixa logar e exibe um alerta de credenciais incorretas
+
+Cenário #1.3: Login de usuário inexistente
+	Dado um usuário que não esteja cadastrado no sistema
+	E ele insere seu username e senha inexistentes na página de Login
+	Quando ele clica no botão “login”
+	Então o sistema não o deixa logar e exibe um alerta de credenciais incorretas
+
+Cenário #1.4: Login sem senha
+	Dado um usuário que esteja cadastrado e com acesso ao sistema
+	E ele insere apenas seu username correto, mas nenhuma senha, na página de Login
+	Quando ele clica no botão “login”
+	Então o sistema não o deixa logar e exibe um alerta de que o campo senha é obrigatório
+
+Cenário #1.5: Login sem username
+	Dado um usuário qualquer
+	E ele não insere seu username, apenas uma senha qualquer (vazia ou não), na página de Login
+	Quando ele clica no botão “login”
+	Então o sistema não o deixa logar e exibe um alerta de que o campo username é obrigatório
+
+Cenário #1.6: Login bloqueado
+	Dado um usuário cadastrado e bloqueado no sistema
+	E ele insere seu username e senha corretos na página de Login
+	Quando ele clica no botão “login”
+	Então o sistema não o deixa logar e exibe um alerta de que ele está bloqueado

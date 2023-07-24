@@ -1,0 +1,50 @@
+Funcionalidade #6: Checkout do carrinho
+	Usuário logado deseja fazer o checkout de seu carrinho de compras
+
+Contexto:
+	Dado um usuário logado qualquer no sistema que esteja na página do carrinho
+
+Cenário #6.1: Checkout de carrinho vazio
+	Quando ele não tem nenhum produto no carrinho
+	Então o sistema exibe uma lista de produtos vazia
+	E exibe os botões “← Continue Shopping” e “Checkout”, mas não permite que o usuário faça checkout
+
+Cenário #6.2: Checkout finalizado com um ou mais produtos
+	Quando ele tem produtos no carrinho
+	E clica no botão “Checkout”
+	Então o sistema o redireciona para a página do primeiro passo do checkout
+	Quando ele preenche os campos com dados válidos (primeiro e segundo alfabéticos e o terceiro numérico)
+	E clica no botão “Continue”
+	Então o sistema o redireciona para a página do segundo passo do checkout
+	E exibe a lista de produtos comprados, algumas informações da compra e o preço total correto
+	E exibe os botões “← Cancel” e “Finish”
+	Quando o usuário clica em “Finish”
+	Então o sistema o redireciona para a página de checkout completo, com um botão para voltar à tela inicial
+	E o carrinho é esvaziado
+	E o botão “Remove” dos produtos comprados vira o botão “Add to cart”
+
+Cenário #6.3: Checkout cancelado no primeiro passo
+	Quando ele tem produtos no carrinho
+	E clica no botão “Checkout”
+	Então o sistema o redireciona para a página do primeiro passo do checkout
+	Quando ele clica no botão “← Cancel”
+	Então o sistema o redireciona de volta para a página do carrinho
+
+Cenário #6.4: Checkout cancelado no segundo passo
+	Quando ele tem produtos no carrinho
+	E clica no botão “Checkout”
+	Então o sistema o redireciona para a página do primeiro passo do checkout
+	Quando ele preenche os campos com dados válidos (primeiro e segundo alfabéticos e o terceiro numérico)
+	E clica no botão “Continue”
+	Então o sistema o redireciona para a página do segundo passo do checkout
+	E exibe a lista de produtos comprados, algumas informações da compra e o preço total correto
+	E exibe os botões “← Cancel” e “Finish”
+	Quando o usuário clica em “← Cancel”
+	Então o sistema o redireciona de volta para a página do carrinho
+
+Cenário #6.5: Checkout com dados inválidos
+	Quando ele tem produtos no carrinho
+	E clica no botão “Checkout”
+	Então o sistema o redireciona para a página do primeiro passo do checkout
+	Quando ele preenche os campos com dados inválidos (primeiro e/ou segundo não alfabéticos e/ou o terceiro não numérico)
+	Então não o permite avançar e exibe um alarta de dados inválidos

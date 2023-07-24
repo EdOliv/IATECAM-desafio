@@ -1,0 +1,24 @@
+Funcionalidade #3: Estoque de produtos
+	Usuário logado deseja navegar pelo estoque de produtos
+
+Contexto:
+	Dado um usuário logado qualquer no sistema
+
+Cenário #3.1: Lista de produtos
+	Quando ele é redirecionado para a página inicial
+	Então o sistema exibe a lista com todos os produtos válidos do sistema, cada com uma imagem, nome, descrição, preço e botão de adicionar/remover correspondentes
+
+Cenário #3.2: Página de um produto específico
+	Quando ele clica no nome ou imagem de um produto específico
+	Então o sistema o redireciona para a página desse produto específico, contendo imagem ampliada, nome, descrição, preço e botão de adicionar/remover dele
+
+Cenário #3.3: Página de um produto inexistente
+	Quando ele acessa um URL com o id de um produto inexistente (por exemplo, https://www.saucedemo.com/inventory-item.html?id=7)
+	Então o sistema o redireciona para a página inicial com o estoque dos produtos
+
+Cenário #3.4: De volta à página inicial
+	Quando ele clica no botão “← Back to products” na página de um produto específico
+	E no botão “← Continue Shopping” na página do carrinho
+	E no botão “Back home” na página de checkout
+	E no botão “All Items” do menu lateral
+	Então o sistema o redireciona para a página inicial com o estoque dos produtos

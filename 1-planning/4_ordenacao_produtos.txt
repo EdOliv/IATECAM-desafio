@@ -1,0 +1,29 @@
+Funcionalidade #4: Ordenação dos produtos
+	Usuário logado deseja ordenar o estoque de produtos para facilitar sua busca
+
+Contexto:
+	Dado um usuário logado qualquer no sistema
+
+Cenário #4.1: Ordenação inicial
+	Quando ele é redirecionado para a página inicial
+	Então o sistema exibe a lista com todos os produtos válidos em ordem alfabética crescente
+
+Cenário #4.2: Ordenação decrescente pelo nome
+	Quando ele clica no ícone de filtro
+	E seleciona a opção “Name (Z-A)”
+	Então o sistema exibe a lista com todos os produtos válidos em ordem alfabética decrescente
+
+Cenário #4.3: Ordenação crescente pelo nome
+	Quando ele clica no ícone de filtro
+	E seleciona a opção “Name (A-Z)”
+	Então o sistema exibe a lista com todos os produtos válidos em ordem alfabética crescente
+
+Cenário #4.4: Ordenação crescente pelo preço
+	Quando ele clica no ícone de filtro
+	E seleciona a opção “Price (low to high)”
+	Então o sistema exibe a lista com todos os produtos válidos em ordem crescente pelo preço
+
+Cenário #4.5: Ordenação decrescente pelo preço
+	Quando ele clica no ícone de filtro
+	E seleciona a opção “Price (high to low)”
+	Então o sistema exibe a lista com todos os produtos válidos em ordem decrescente pelo preço
