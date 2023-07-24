@@ -1,0 +1,18 @@
+Defeito #8: Problema na adição e remoção de produtos com o problem_user [Cenários #5.1 e #5.2]
+
+    Descrição:
+	O usuário problem_user só consegue adicionar três produtos específicos e não consegue remover nenhum.
+
+    Passo-a-passo:
+	1. Logar com o usuário problem_user
+	2. Tentar adicionar todos os produtos ao carrinho
+	3. Tentar remover os produtos que conseguiram ser adicionados
+
+    Resultado esperado:
+	O usuário deveria ser capaz tanto de adicionar quanto de remover qualquer produto.
+
+    Resultado obtido:
+	O usuário só consegue adicionar três produtos específicos, além de não poder remover nenhum.
+
+    Gravidade:
+	Alta

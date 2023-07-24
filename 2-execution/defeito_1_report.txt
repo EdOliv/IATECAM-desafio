@@ -1,0 +1,17 @@
+Defeito #1: Imagem dos produtos errada na página inicial [Cenário #3.1]
+
+    Descrição:
+	Na página inicial (estoque) do usuário problem_user, todos os produtos estão com a mesma imagem em vez de estarem com as imagens correspondentes deles.
+
+    Passo-a-passo:
+	1. Logar com o usuário problem_user
+	2. Verificar a imagem dos produtos na página inicial
+
+    Resultado esperado:
+	Todos os produtos estão com as imagens correspondentes deles, tal como ocorre na página inicial de outros usuários.
+
+    Resultado obtido:
+	Todos os produtos apresentam a mesma imagem, que não corresponde a nenhum deles.
+
+    Gravidade:
+	Trivial

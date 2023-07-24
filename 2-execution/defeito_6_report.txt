@@ -1,0 +1,20 @@
+Defeito #6: problem_user não consegue realizar checkout [Cenário #6.2]
+
+    Descrição:
+	Não é possível realizar checkout de um carrinho com o problem_user porque o campo Last Name não pode ser preenchido.
+
+    Passo-a-passo:
+	1. Logar com o usuário problem_user
+	2. Adicionar o primeiro produto ao carrinho
+	3. Navegar para a página do carrinho
+	4. Clicar no botão "Checkout"
+	5. Tentar preencher os campos com dados válidos
+
+    Resultado esperado:
+	Todos os campos podem ser preenchidos adequadamente e, se os dados forem válidos, o sistema redireciona o usuário para a próxima etapa do checkout.
+
+    Resultado obtido:
+	O campo Last Name não pode ser preenchido. Quando se tenta alterá-lo, é o campo First Name que é alterado no lugar dele.
+
+    Gravidade:
+	Alta

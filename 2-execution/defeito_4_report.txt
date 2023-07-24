@@ -1,0 +1,21 @@
+Defeito #4: É possível acessar a página de um produto inexistente [Cenário #3.3]
+
+    Descrição:
+	É possível acessar a página de um produto inexistente quando se modifica a URL colocando um id inválido (por exemplo, https://www.saucedemo.com/inventory-item.html?id=8). Também é possível acessar essa página por meio do usuário problem_user ao clicar no produto "Sauce Labs Fleece Jacket" na página inicial.
+
+    Passo-a-passo:
+	1. Logar com um usuário qualquer
+	2. Mudar o id da URL para um número maior ou igual a 6 (como https://www.saucedemo.com/inventory-item.html?id=8)
+	OU
+	1. Logar com o usuário problem_user
+	2. Clicar no produto "Sauce Labs Fleece Jacket" na página inicial
+
+    Resultado esperado:
+	Não deveria ser possível acessar um produto inválido/inexistente.
+
+    Resultado obtido:
+	É possível acessar um produto inválido/inexistente e também adicioná-lo ao carrinho, o que causa problemas de carregamento do carrinho e do checkout.
+
+    Gravidade:
+	Crítica
+

@@ -1,0 +1,18 @@
+Defeito #3: Rodapé com problema de responsividade [Cenário #3.2]
+
+    Descrição:
+	Na página individual de um produto, quando a tela do navegador é diminuída, o rodapé da página fica mal ajustado com relação ao resto da página.
+
+    Passo-a-passo:
+	1. Logar com um usuário qualquer
+	2. Na página inicial, clicar no nome de qualquer produto
+	3. Na página do produto selecionado, rolar até o rodapé
+
+    Resultado esperado:
+	O rodapé se ajusta a qualquer tamanho da página, assim como os outros componentes.
+
+    Resultado obtido:
+	O rodapé não se ajusta direito em alguns tamanhos da página, ao contrário de outros componentes.
+
+    Gravidade:
+	Trivial

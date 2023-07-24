@@ -1,0 +1,17 @@
+Defeito #9: Produtos com links não correspondentes [Cenário #3.1]
+
+    Descrição:
+	Na página inicial, para o usuário problem_user, todos os produtos estão com links trocados e não correspondentes ao que eles são. Além disso, um deles, "Sauce Labs Fleece Jacket", leva para a página de um produto inexistente.
+
+    Passo-a-passo:
+	1. Logar com o usuário problem_user
+	2. Acessar a página individual de cada produto
+
+    Resultado esperado:
+	Cada produto deveria possuir o link correspondente e correto para a sua página individual.
+
+    Resultado obtido:
+	Todos os produtos apresentam links não correspondentes e um deles leva à página de um produto inexistente, o qual, se adicionado, pode quebrar o site.
+
+    Gravidade:
+	Crítica

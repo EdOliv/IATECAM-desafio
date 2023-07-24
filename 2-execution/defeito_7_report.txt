@@ -1,0 +1,20 @@
+Defeito #7: Dados inválidos são permitidos no checkout [Cenário #6.5]
+
+    Descrição:
+	É possível preencher os campos do primeiro passo do checkout com dados inválidos.
+
+    Passo-a-passo:
+	1. Logar com qualquer usuário
+	2. Adicionar produtos ao carrinho
+	3. Navegar para a página do carrinho
+	4. Clicar no botão "Checkout"
+	5. Preencher os campos com dados inválidos (por exemplo, apenas espaços)
+
+    Resultado esperado:
+	O sistema não deveria aceitar dados inválidos (nome e sobrenome não sendo letras e código postal não sendo números) e exibir um alerta sobre isso.
+
+    Resultado obtido:
+	O sistema aceita os dados inválidos e redireciona o usuário para a próxima etapa do checkout.
+
+    Gravidade:
+	Alta

@@ -1,0 +1,19 @@
+Defeito #2: Muita demora para carregar a página inicial [Cenário #3.1]
+
+    Descrição:
+	Com o usuário performance_glitch_user, a página inicial demora muito para ser carregada e atualizada.
+
+    Passo-a-passo:
+	1. Logar com o usuário performance_glitch_user
+	2. Verificar a demora da página inicial
+	3. Reordenar a lista com o filtro e verificar a demora da atualização
+
+    Resultado esperado:
+	A página inicial é carregada em tempo aceitável, em menos de um segundo.
+
+    Resultado obtido:
+	A página inicial demora muitos segundos para ser carregada.
+
+    Gravidade:
+	Pequena
+

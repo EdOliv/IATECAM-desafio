@@ -1,0 +1,35 @@
+Funcionalidade #1: Login (6 sucessos, 0 falha)
+	Cenário #1.1: Login válido ✓
+	Cenário #1.2: Login incorreto ✓
+	Cenário #1.3: Login de usuário inexistente ✓
+	Cenário #1.4: Login sem senha ✓
+	Cenário #1.5: Login sem username ✓
+	Cenário #1.6: Login bloqueado ✓
+
+Funcionalidade #2: Logout (1 sucesso, 0 falha)
+	Cenário #2.1: Logout válido ✓
+
+Funcionalidade #3: Estoque de produtos (1 sucesso, 3 falhas)
+	Cenário #3.1: Lista de produtos ✖ (Defeitos #1, #2 e #9)
+	Cenário #3.2: Página de um produto específico ✖ (Defeito #3)
+	Cenário #3.3: Página de um produto inexistente ✖ (Defeito #4)
+	Cenário #3.4: De volta à página inicial ✓
+
+Funcionalidade #4: Ordenação dos produtos (5 sucessos, 0 falha)
+	Cenário #4.1: Ordenação inicial ✓
+	Cenário #4.2: Ordenação decrescente por nome ✓
+	Cenário #4.3: Ordenação crescente por nome ✓
+	Cenário #4.4: Ordenação crescente pelo preço ✓
+	Cenário #4.5: Ordenação decrescente pelo preço ✓
+
+Funcionalidade #5: Preencher carrinho (1 sucesso, 2 falhas)
+	Cenário #5.1: Adicionar produto válido ✖ (Defeito #8)
+	Cenário #5.2: Remover produto válido ✖ (Defeito #8)
+	Cenário #5.3: Acessar carrinho ✓
+
+Funcionalidade #6: Checkout do carrinho (2 sucessos, 3 falhas)
+	Cenário #6.1: Checkout de carrinho vazio ✖ (Defeito #5)
+	Cenário #6.2: Checkout finalizado com um ou mais produtos ✖ (Defeitos #6)
+	Cenário #6.3: Checkout cancelado no primeiro passo ✓
+	Cenário #6.4: Checkout cancelado no segundo passo ✓
+	Cenário #6.5: Checkout com dados inválidos ✖ (Defeito #7)

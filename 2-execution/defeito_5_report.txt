@@ -1,0 +1,19 @@
+Defeito #5: É possível fazer checkout com o carrinho vazio [Cenário #6.1]
+
+    Descrição:
+	É possível fazer checkout mesmo com o carrinho não tem produto algum.
+
+    Passo-a-passo:
+	1. Logar com um usuário qualquer
+	2. Não adicionar nenhum produto ao carrinho
+	3. Navegar para a página do carrinho
+	4. Concluir o checkout
+
+    Resultado esperado:
+	O sistema deveria impedir que o usuário fizesse checkout com carrinho vazio e exibir algum alerta sobre isso.
+
+    Resultado obtido:
+	O sistema permite que o usuário faça o checkout completo de um carrinho vazio.
+
+    Gravidade:
+	Alta
